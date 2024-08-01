@@ -9,3 +9,12 @@ FROM
     employees
 GROUP BY 
     SUBSTRING(name, 1, 2);
+
+output:
+
+two_letter	count
+Al	2
+Bo	1
+Ch	1
+Be	1
+Ci	1
