@@ -1,0 +1,11 @@
+Question is to fetch first two letters of employee name  as two letter from employee table and return the total count of each name as count.
+
+solution:
+
+SELECT 
+    SUBSTRING(name, 1, 2) AS two_letter, 
+    COUNT(*) AS count
+FROM 
+    employees
+GROUP BY 
+    SUBSTRING(name, 1, 2);
